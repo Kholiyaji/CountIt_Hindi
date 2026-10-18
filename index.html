@@ -34,7 +34,7 @@ button{font:inherit;cursor:pointer}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;list-style:none;margin:0;padding:0}
 .card{width:100%;display:flex;flex-direction:column;align-items:center;text-align:center;background:var(--surface);color:var(--ink);border:1.5px solid var(--line);border-radius:18px;padding:16px 8px 14px}
 .card:active{transform:scale(.97)}
-.dev{font-family:"Tiro Devanagari Hindi","Noto Serif Devanagari",Georgia,serif;font-size:4.6rem;line-height:1.1}
+.dev{font-family:"Mukta","Noto Sans Devanagari",system-ui,sans-serif;font-weight:600;font-size:4.6rem;line-height:1.15}
 .word{font-size:1.45rem;font-weight:800;margin-top:2px}
 .say{color:var(--muted);font-size:1rem}
 .en{margin-top:8px;font-weight:600;font-size:.95rem;background:var(--bg);border-radius:8px;padding:2px 12px;min-width:3.2rem}
@@ -43,7 +43,7 @@ button{font:inherit;cursor:pointer}
 .zero{grid-column:1 / -1}
 .example{margin-top:26px;background:var(--surface);border:1.5px solid var(--line);border-radius:18px;padding:18px}
 .example h2{margin:0 0 6px;font-size:1.2rem}
-.example .big{font-family:"Tiro Devanagari Hindi",Georgia,serif;font-size:3rem;margin:4px 0}
+.example .big{font-family:"Mukta","Noto Sans Devanagari",system-ui,sans-serif;font-weight:600;font-size:3rem;margin:4px 0}
 .example p{margin:4px 0;color:var(--muted)}
 footer{margin-top:30px;text-align:center}
 .yt{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:800;text-decoration:none;border-radius:999px;padding:12px 24px}
@@ -54,7 +54,7 @@ footer p{margin:0 0 12px;color:var(--muted)}
 .count{display:grid;grid-template-columns:repeat(auto-fill,minmax(104px,1fr));gap:6px}
 .mini{display:flex;flex-direction:column;align-items:flex-start;text-align:left;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:6px 9px;line-height:1.25}
 .mini .t{font-weight:800;font-size:1rem}
-.mini .t i{font-family:"Tiro Devanagari Hindi",Georgia,serif;font-style:normal;font-weight:400;color:var(--muted);margin-right:6px}
+.mini .t i{font-family:"Mukta","Noto Sans Devanagari",system-ui,sans-serif;font-style:normal;font-weight:600;color:var(--muted);margin-right:6px}
 .mini .r{font-size:.78rem;color:var(--muted)}
 .mini.ten{border-color:var(--accent);border-width:1.5px}
 a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
@@ -117,7 +117,7 @@ data.forEach(([d,w,s,n])=>{
   grid.appendChild(li);
 });
 
-const hundred="एक ek;दो do;तीन teen;चार chaar;पाँच paanch;छह chhah;सात saat;आठ aath;नौ nau;दस das;ग्यारह gyaarah;बारह baarah;तेरह terah;चौदह chaudah;पंद्रह pandrah;सोलह solah;सत्रह satrah;अठारह athaarah;उन्नीस unnees;बीस bees;इक्कीस ikkees;बाईस baaees;तेईस teyees;चौबीस chaubees;पच्चीस pachchees;छब्बीस chhabbees;सत्ताईस sattaaees;अट्ठाईस atthaaees;उनतीस untees;तीस tees;इकतीस ikatees;बत्तीस battees;तैंतीस taintees;चौंतीस chauntees;पैंतीस paintees;छत्तीस chhattees;सैंतीस saintees;अड़तीस adtees;उनतालीस untaalees;चालीस chaalees;इकतालीस iktaalees;बयालीस bayaalees;तैंतालीस taintaalees;चौवालीस chauvaalees;पैंतालीस paintaalees;छयालीस chhiyaalees;सैंतालीस saintaalees;अड़तालीस adtaalees;उनचास unchaas;पचास pachaas;इक्यावन ikyaavan;बावन baavan;तिरपन tirpan;चौवन chauvan;पचपन pachpan;छप्पन chhappan;सत्तावन sattaavan;अट्ठावन atthaavan;उनसठ unsath;साठ saath;इकसठ iksath;बासठ baasath;तिरसठ tirsath;चौंसठ chaunsath;पैंसठ painsath;छियासठ chhiyaasath;सड़सठ sadsath;अड़सठ adsath;उनहत्तर unhattar;सत्तर sattar;इकहत्तर ikhattar;बहत्तर bahattar;तिहत्तर tihattar;चौहत्तर chauhattar;पचहत्तर pachattar;छिहत्तर chhihattar;सतहत्तर sathattar;अठहत्तर athhattar;उनासी unaasee;अस्सी assee;इक्यासी ikyaasee;बयासी bayaasee;तिरासी tiraasee;चौरासी chauraasee;पचासी pachaasee;छियासी chhiyaasee;सत्तासी sattaasee;अट्ठासी atthaasee;नवासी navaasee;नब्बे nabbe;इक्यानवे ikyaanave;बानवे baanave;तिरानवे tiraanave;चौरानवे chauraanave;पचानवे pachaanave;छियानवे chhiyaanave;सत्तानवे sattaanave;अट्ठानवे atthaanave;निन्यानवे ninyaanave;सौ sau".split(";");
+const hundred="एक ek;दो do;तीन teen;चार chaar;पाँच paanch;छह chhah;सात saat;आठ aath;नौ nau;दस das;ग्यारह gyaarah;बारह baarah;तेरह terah;चौदह chaudah;पंद्रह pandrah;सोलह solah;सत्रह satrah;अठारह athaarah;उन्नीस unnees;बीस bees;इक्कीस ikkees;बाईस baaees;तेईस teyees;चौबीस chaubees;पच्चीस pachchees;छब्बीस chhabbees;सत्ताईस sattaaees;अट्ठाईस atthaaees;उनतीस untees;तीस tees;इकतीस ikatees;बत्तीस battees;तैंतीस taintees;चौंतीस chauntees;पैंतीस paintees;छत्तीस chhattees;सैंतीस saintees;अड़तीस adtees;उनतालीस untaalees;चालीस chaalees;इकतालीस iktaalees;बयालीस bayaalees;तैंतालीस taintaalees;चौवालीस chauvaalees;पैंतालीस paintaalees;छियालीस chhiyaalees;सैंतालीस saintaalees;अड़तालीस adtaalees;उनचास unchaas;पचास pachaas;इक्यावन ikyaavan;बावन baavan;तिरपन tirpan;चौवन chauvan;पचपन pachpan;छप्पन chhappan;सत्तावन sattaavan;अट्ठावन atthaavan;उनसठ unsath;साठ saath;इकसठ iksath;बासठ baasath;तिरसठ tirsath;चौंसठ chaunsath;पैंसठ painsath;छियासठ chhiyaasath;सड़सठ sadsath;अड़सठ adsath;उनहत्तर unhattar;सत्तर sattar;इकहत्तर ikhattar;बहत्तर bahattar;तिहत्तर tihattar;चौहत्तर chauhattar;पचहत्तर pachattar;छिहत्तर chhihattar;सतहत्तर sathattar;अठहत्तर athhattar;उनासी unaasee;अस्सी assee;इक्यासी ikyaasee;बयासी bayaasee;तिरासी tiraasee;चौरासी chauraasee;पचासी pachaasee;छियासी chhiyaasee;सत्तासी sattaasee;अट्ठासी atthaasee;नवासी navaasee;नब्बे nabbe;इक्यानवे ikyaanave;बानवे baanave;तिरानवे tiraanave;चौरानवे chauraanave;पचानवे pachaanave;छियानवे chhiyaanave;सत्तानवे sattaanave;अट्ठानवे atthaanave;निन्यानवे ninyaanave;सौ sau".split(";");
 const dig="०१२३४५६७८९";
 const countBox=document.getElementById("count");
 hundred.forEach((item,i)=>{
